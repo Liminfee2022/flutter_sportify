@@ -6,6 +6,7 @@ import 'package:spotify_clone/common/widgets/button/basic_app_button.dart';
 import 'package:spotify_clone/core/configs/assets/app_images.dart';
 import 'package:spotify_clone/core/configs/assets/app_vectors.dart';
 import 'package:spotify_clone/core/configs/theme/app_colors.dart';
+import 'package:spotify_clone/presentation/auth/pages/signin.dart';
 import 'package:spotify_clone/presentation/auth/pages/signup.dart';
 
 class SignupOrSigninPage extends StatelessWidget {
@@ -83,7 +84,7 @@ class SignupOrSigninPage extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (BuildContext context) =>
-                                      const SignUpPage()));
+                                      const SignInPage()));
                             },
                             child: Text(
                               'Sign in',
