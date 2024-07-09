@@ -4,7 +4,7 @@ import 'package:spotify_clone/presentation/home/bloc/news_song_state.dart';
 import 'package:spotify_clone/services/locator/service_locator.dart';
 
 class NewsSongCubit extends Cubit<NewsSongsState> {
-  NewsSongCubit(super.initialState);
+  NewsSongCubit() : super(NewsSongLoading());
 
   Future<void> getNewsSongs() async {
     var returnedSongs = await sl<GetNewsSongsUsecase>().call();
