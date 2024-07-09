@@ -52,8 +52,8 @@ class SignupOrSigninPage extends StatelessWidget {
                   const Text(
                     'Spotify is a proprietary Swedish audio streaming and media services provider ',
                     style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 13,
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -69,7 +69,7 @@ class SignupOrSigninPage extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (BuildContext context) =>
-                                  const SignUpPage()));
+                                      SignUpPage()));
                         },
                         title: 'Register',
                       )),
@@ -84,14 +84,16 @@ class SignupOrSigninPage extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (BuildContext context) =>
-                                      const SignInPage()));
+                                          SignInPage()));
                             },
                             child: Text(
                               'Sign in',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
-                                color: context.isDarkMode ? Colors.white : Colors.black,
+                                color: context.isDarkMode
+                                    ? Colors.white
+                                    : Colors.black,
                               ),
                             ),
                           )),
